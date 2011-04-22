@@ -260,8 +260,8 @@
 ### feof
     while(!feof(fp))  -> C "language" feof () "function to return the last" read "operation of the content.   
 ### fopen
-  >     w+  ->  Open for reading and writing.  The file is created  if  it  does not  exist, otherwise it is truncated.  The stream is positioned at the      
-                    beginning of the file.
+  >     w+  ->  Open for reading and writing.  The file is created  if  it  does not  exist, otherwise it is truncated.  
+                    The stream is positioned at the beginning of the file.
   >   r+   ->  Open for reading and writing.  The stream is positioned  at  the beginning of the file.
 
   >    a+   ->  Open for reading and appending (writing at end  of  file).   The file is created if it does not exist.  The initial file position for reading is      
