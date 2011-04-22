@@ -253,7 +253,24 @@
     done
 
 ***
+#C
 
+##file
+       _Written text ending add\ n by hand_
+### feof
+    while(!feof(fp))  -> C "language" feof () "function to return the last" read "operation of the content.   
+### fopen
+  >     w+  ->  Open for reading and writing.  The file is created  if  it  does not  exist, otherwise it is truncated.  The stream is positioned at the      
+                    beginning of the file.
+  >   r+   ->  Open for reading and writing.  The stream is positioned  at  the beginning of the file.
+
+  >    a+   ->  Open for reading and appending (writing at end  of  file).   The file is created if it does not exist.  The initial file position for reading is      
+                   at the beginning  of  the  file,  but  output  is always appended to the end of the file.
+### make
+ >       ls /dev/fb0
+ >        if no   sudo chmod 777 /boot/grub/grub.cfg
+                    add vga=0x38 in the grub.cfg  
+ >       ls /dev/input/mice
 #_TODO_
 
 *  To learn bash from Peter's website.
