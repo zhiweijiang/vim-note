@@ -295,7 +295,10 @@
 
     Alt+Ctrl+Shift+<F1>   ->     To the console interface  
     Alt+<F7>   ->  exit the consle interface
-    
+### fivechess
+    error(fb0: Permission denied)
+    do: sudo chmod 777 /dev/fb0
+
 #_TODO_
 
 *  To learn bash from Peter's website.
