@@ -261,19 +261,41 @@
     while(!feof(fp))  -> C "language" feof () "function to return the last" read "operation of the content.   
 ### fopen
        w+  ->  Open for reading and writing.  The file is created  if  it  does not  exist, otherwise it is truncated.  
-                    The stream is positioned at the beginning of the file. 
+               The stream is positioned at the beginning of the file. 
   
-       r+    ->  Open for reading and writing.  The stream is positioned  at  the beginning of the file.
+       r+  ->  Open for reading and writing.  The stream is positioned  at  the beginning of the file.
 
        a+   ->  Open for reading and appending (writing at end  of  file).   The file is created if it does not exist. 
-                    The initial file position for reading is at the beginning of the file, but output is always  appended 
-                     to the end of the file. 
+                The initial file position for reading is at the beginning of the file, but output is always  appended 
+                to the end of the file. 
 
 ### make
 >      ls /dev/fb0
-        ( if no   sudo chmod 777 /boot/grub/grub.cfg              add vga=0x38 in the grub.cfg ) 
+        ( if no   sudo chmod 777 /boot/grub/grub.cfg   add vga=0x38 in the grub.cfg ) 
 >      ls /dev/input/mice
 
+>       make -> make main
+>       make run -> ./main
+>       make clean
+
+### Makefile
+
+* #this is for chess game
+    scr = main.c init_screen.c
+    para = -o main -Wall
+    main:$(scr)
+            gcc $(scr) $(para)
+    clean:
+            rm -rf main
+            rm -rf *.o
+            rm -rf ~*
+    run:
+            ./mian
+### console interface
+
+    Alt+Ctrl+Shift+<F1>   ->     To the console interface  
+    Alt+<F7>   ->  exit the consle interface
+    
 #_TODO_
 
 *  To learn bash from Peter's website.
