@@ -292,7 +292,7 @@
     run:
             ./mian
 ### console interface
-
+    Ctrl+l  ->  Clean the screen
     Alt+Ctrl+Shift+<F1>   ->     To the console interface  
     Alt+<F7>   ->  exit the consle interface
 ### fivechess
