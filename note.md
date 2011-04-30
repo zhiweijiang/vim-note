@@ -102,6 +102,7 @@
 *  :q              -> quit
 *  !               -> force
 *  ,ss             -> setlocal spell
+*  SHIFT+k         -> man
 *  vimtutor        -> the vim tutor
 *  :vnew/new file  -> CTRL+w+w to change window and :bd(buffer delete) to close active
 *  :Tlist          -> we can use ",t" when use Peter's VimRC
@@ -299,10 +300,24 @@
     error(fb0: Permission denied)
     do: sudo chmod 777 /dev/fb0
 
+## gcc
+   gcc -o -> the other named
+   gcc -g -> goto debug environment
+## gdb
+    prinf(p) -> the value variable
+    next(n) ->  carray out a command
+    step(s) ->  step to function
+    start -> main function start
+    break(b) num  -> set num line breakpoint
+    continue(c)  -> go on perform next a command
+    run -> run before debug or end
 #_TODO_
 
 *  To learn bash from Peter's website.
 *  _Program Lib HOWTO_
 *  http://vim-showoff-peter.heroku.com
 *  [Seven habits of effective text editing](http://www.google.com.hk/search?sourceid=chrome&ie=UTF-8&q=Seven+habits+of+effective+text+editing)
-_
+*  To learn Linux c from song's website.
+   Linux C
+   [Seven habits of effective text editing](http://learn.akae.cn/media/index.html)
+   _
