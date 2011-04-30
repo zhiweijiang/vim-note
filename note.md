@@ -319,5 +319,4 @@
 *  [Seven habits of effective text editing](http://www.google.com.hk/search?sourceid=chrome&ie=UTF-8&q=Seven+habits+of+effective+text+editing)
 *  To learn Linux c from song's website.
    Linux C
-   [Seven habits of effective text editing](http://learn.akae.cn/media/index.html)
-   _
+   http://learn.akae.cn/media/index.html
