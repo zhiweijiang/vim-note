@@ -303,6 +303,7 @@
 ## gcc
    gcc -o -> the other named
    gcc -g -> goto debug environment
+   gcc -c -> generated .o file
 ## gdb
     prinf(p) -> the value variable
     next(n) ->  carray out a command
@@ -311,6 +312,18 @@
     break(b) num  -> set num line breakpoint
     continue(c)  -> go on perform next a command
     run -> run before debug or end
+## ftp
+    ftp 192.168.3.227
+    anonymous
+    get c-test.doc
+    bye   
+## static library
+    gcc -c *.c
+    ar rs(r->file  s->index)  lib*.so  *.o
+    gcc main.c libc*.so  -o main
+##  shared library
+    gcc -fPIC( related position) -c *.c
+    gcc -shared -o lib*.so *.o
 #_TODO_
 
 *  To learn bash from Peter's website.
