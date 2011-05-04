@@ -292,6 +292,24 @@
             rm -rf ~*
     run:
             ./mian
+* #This is for easy function
+    CFLAG = -Wall -c -fPIC
+    LDFLAG =-shared
+    #src = a.c b.c c.c
+    src = $(wildcard *.c)
+    #obj = a.o b.o c.o
+    obj = $(patsubst %.c, %.o, $(src))
+    CC = gcc    
+    target = libstak.so
+    all:$(obj)
+            $(CC) $(obj) $(LDFLAG) -o $(target)
+    %.o:%.c
+            $(CC) $(CFLAG) -o $@ $<
+    .PHONY:clean
+    clean:
+        rm -f *.o
+        rm -f $(target)
+
 ### console interface
     Ctrl+l  ->  Clean the screen
     Alt+Ctrl+Shift+<F1>   ->     To the console interface  
@@ -302,6 +320,8 @@
 
 ### gcc
     gcc -o -> the other named
+    gcc -I -> indicated *.h file
+    gcc -L -> indicated lib*.so file
     gcc -g -> goto debug environment
     gcc -c -> generated .o file
 ### gdb
@@ -324,6 +344,14 @@
 ###  shared library
     gcc -fPIC( related position) -c *.c
     gcc -shared -o lib*.so *.o
+    gcc -I /include -L /lib*.so
+### ldd
+    ldd a.out
+    libfive.so =>not found
+    the first way: cp lib*.so /lib/lib*.so
+    the second way: export LD_LIBRARY_PATH=/home/xwp/c-note/fivechess/main
+    the three way: vim  /etc/ld.so.conf
+                   sudo ldconfig -v
 #_TODO_
 
 *  To learn bash from Peter's website.
