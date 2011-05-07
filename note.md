@@ -139,7 +139,7 @@
     snippet inc
         #include <${1:stdio}.h>${2}
 
-###vim ctags
+tandard
 
 *  CTRL+N
 *  CTRL+]
@@ -257,10 +257,11 @@
 #C
 
 ##file
-       _Written text ending add\ n by hand_
+       _Written text ending add '\n' by hand_
 ### feof
-    while(!feof(fp))  -> C "language" feof () "function to return the last" read "operation of the content.   
+    while(!feof(fp))  -> C "language" feof () "function to return the last "read" operation of the content.   
 ### fopen
+       wb+ ->  Open for binary file. outher function is same with w+
        w+  ->  Open for reading and writing.  The file is created  if  it  does not  exist, otherwise it is truncated.  
                The stream is positioned at the beginning of the file. 
   
@@ -269,7 +270,14 @@
        a+   ->  Open for reading and appending (writing at end  of  file).   The file is created if it does not exist. 
                 The initial file position for reading is at the beginning of the file, but output is always  appended 
                 to the end of the file. 
-
+### Output terminal
+    when char from buffer to output terminal
+    one: met '/n'
+    two: fflush(stdout);
+    three: fflush full or Procedure ended
+    (fflush just only empty output buffer)
+### Regular expressions
+    grep "/bFILE/b" *.h  -> find FILE in *.h
 ### make
 >      ls /dev/fb0
         ( if no   sudo chmod 777 /boot/grub/grub.cfg   add vga=0x38 in the grub.cfg ) 
