@@ -280,7 +280,7 @@ tandard
     grep "/bFILE/b" *.h  -> find FILE in *.h
 ### make
 >      ls /dev/fb0
-        ( if no   sudo chmod 777 /boot/grub/grub.cfg   add vga=0x38 in the grub.cfg ) 
+        ( if no   sudo chmod 777 /boot/grub/grub.cfg   add vga=0x318 in the grub.cfg ) 
 >      ls /dev/input/mice
 
 >       make -> make main
