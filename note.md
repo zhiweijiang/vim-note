@@ -21,6 +21,12 @@
 >``cp aa bb``   -> copy
 
 ###rm
+``rm -rf *.c`` -> delete *.c 
+
+### kill
+    kill -l -> find all sign type
+    ps -aux -> View the current all processes
+    kill -9 processnum -> KILL this process
 
 ###sudo
 
@@ -277,7 +283,7 @@ tandard
     three: fflush full or Procedure ended
     (fflush just only empty output buffer)
 ### Regular expressions
-    grep "/bFILE/b" *.h  -> find FILE in *.h
+    grep "/bFILE/b" *.h -R(cycle find) -> find FILE in *.h
 ### make
 >      ls /dev/fb0
         ( if no   sudo chmod 777 /boot/grub/grub.cfg   add vga=0x318 in the grub.cfg ) 
