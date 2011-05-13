@@ -36,6 +36,7 @@
 
 ###chmod
 
+>umask                     -> Process mask
 >ugo                       -> user, group, others
 
 >a                         -> all
