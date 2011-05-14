@@ -287,7 +287,8 @@ tandard
     grep "/bFILE/b" *.h -R(cycle find) -> find FILE in *.h
 ### make
 >      ls /dev/fb0
-        ( if no   sudo chmod 777 /boot/grub/grub.cfg   add vga=0x318 in the grub.cfg ) 
+       ( if no   sudo chmod 777 /boot/grub/grub.cfg   add vga=0x318 in the grub.cfg ) 
+       0x318 -> (width:1024 length: 768 bpp: 32)
 >      ls /dev/input/mice
 
 >       make -> make main
@@ -367,6 +368,29 @@ tandard
     the second way: export LD_LIBRARY_PATH=/home/xwp/c-note/fivechess/main
     the three way: vim  /etc/ld.so.conf
                    sudo ldconfig -v
+##Unbuffered IO
+    int open(const char *pathname, int flags,...) 
+    int close(int fd)
+    ssize_t write(int fd, const void *buf, size_t count)
+    ssize_t read(int fd, void *buf, size_t count)]
+    off_t lseek(int fd, off_t offset, int whence); ->(Device settings cannot
+    be offset)
+    int fcntl(int fd, int cmd, strcut flock *lock);
+    " < " -> default 0 stdin write only  
+    " 2<* " -> 2 redirection *
+    " > " -> default 1 stdout read only
+    " >> " -> additional way to write
+    " <> " -> redirevtion read and write
+    int ioctl(int d, int request, ...)
+    void *mmap(void *addr, size_t len, int prot, int flag, int filedes, off_t
+    off)
+    od -> dump files in octal and other formats
+    $ vi hello
+    $ od -tx1 -tc hello
+    00000000 68 65 6c 6c 6f 6a
+              h  e  l   l   o  \n
+    00000006
+    int fstat(int fd, struct stat *buf)
 #_TODO_
 
 *  To learn bash from Peter's website.
