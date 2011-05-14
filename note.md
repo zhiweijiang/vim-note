@@ -373,8 +373,10 @@ tandard
     int close(int fd)
     ssize_t write(int fd, const void *buf, size_t count)
     ssize_t read(int fd, void *buf, size_t count)]
-    off_t lseek(int fd, off_t offset, int whence); ->(Device settings cannot
-    be offset)
+    off_t lseek(int fd, off_t offset, int whence); ->(Device settings cannot be offset)
+    whence : SEEK_CUR -> file the current location
+             SEEK_SET -> file start 
+             SEEK_END -> file end 
     int fcntl(int fd, int cmd, strcut flock *lock);
     " < " -> default 0 stdin write only  
     " 2<* " -> 2 redirection *
