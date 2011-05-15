@@ -393,6 +393,9 @@ tandard
               h  e  l   l   o  \n
     00000006
     int fstat(int fd, struct stat *buf)
+### Framebuff
+    void *memset(void *s, int c, size_t n)->(function fills the first n bytes of the 
+    memory area pointed to bys with the constant byte c.
 #_TODO_
 
 *  To learn bash from Peter's website.
