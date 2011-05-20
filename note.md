@@ -1,7 +1,3 @@
-#_My Note_
-
-##bash
-
 >``cd fir-<tab>``  -> cd first	(Quick completion)
 
 ###path
@@ -19,6 +15,8 @@
 >``mv aa bb``   -> rename or move
 
 >``cp aa bb``   -> copy
+
+>``cp -a -> copy a Directory file
 
 ###rm
 ``rm -rf *.c`` -> delete *.c 
@@ -71,9 +69,9 @@
 
 ##install
 
-*  ``./configure``
-*  ``make``
-*  ``sudo make install``
+*  ``./configure`` -> make a Makefile 
+*  ``make`` -> command Makefile
+*  ``sudo make install`` -> Automatic configuration
 
 ### /bin
 
@@ -120,7 +118,7 @@
 *  zx              -> Open floding.
 *  zc              -> Flod floding.
 *  ``vim -t main`` -> should exist the ctags
-
+*   :v  CTRL + x   -> Automatically indents
 ### split view
 
 *  ``vim -On file1 file2``  -> Vertical Split
@@ -185,7 +183,7 @@ tandard
 
 *  ``unzip [filename]``   -> To extract the file[filename]
 *  ``tar xzvf tig-0.17.tar.gz``   -> Extract .tar and .gz
-
+*  ``tar czvf *.gz *.*  -> Decompress file
 ***
 
 ##diff
@@ -352,7 +350,12 @@ tandard
     ftp 192.168.3.227
     anonymous
     get c-test.doc
-    bye   
+    bye  
+
+## library
+    link name(*.so) -> use when compilation
+    so name(main version number) -> use when run
+    real name(version number complete) -> front two name point to the file
 ### static library
     gcc -c *.c
     ar rs(r->file  s->index)  lib*.so  *.o
@@ -395,7 +398,10 @@ tandard
     int fstat(int fd, struct stat *buf)
 ### Framebuff
     void *memset(void *s, int c, size_t n)->(function fills the first n bytes of the 
-    memory area pointed to bys with the constant byte c.
+    memory area pointed to bys with the constant byte c
+### Pictures format
+    dd if(input file)= *.bmp of(out file)=image bs=54 sk:p=1 -> Intercept a 
+    part of *.bmp make image
 #_TODO_
 
 *  To learn bash from Peter's website.
