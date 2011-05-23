@@ -1,6 +1,9 @@
 >``cd fir-<tab>``  -> cd first	(Quick completion)
 
 ###path
+>pwd -> printf rel path
+
+>which command -> locate a command 
 
 >abs path
 
@@ -402,6 +405,11 @@ tandard
 ### Pictures format
     dd if(input file)= *.bmp of(out file)=image bs=54 sk:p=1 -> Intercept a 
     part of *.bmp make image
+### Many programming process
+    (gdb) set follow-fork-mode child
+    int dup2(int oldfd, int newfd) -> makes newfd be the copy of oldfd,
+    closing newfd first if  necessary
+
 #_TODO_
 
 *  To learn bash from Peter's website.
