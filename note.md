@@ -28,7 +28,7 @@
     kill -l -> find all sign type
     ps -aux -> View the current all processes
     kill -9 processnum -> KILL this process
-
+    $? -> the recently pid
 ###sudo
 
 >sudo    -> SuperUser do
@@ -409,9 +409,13 @@ tandard
     (gdb) set follow-fork-mode child
     int dup2(int oldfd, int newfd) -> makes newfd be the copy of oldfd,
     closing newfd first if  necessary
-
+    ps u -> 
+    xwp      17151 29.0  0.0   1532   284 pts/1    R    18:20   0:24 ./a.out
+    xwp      17152  0.0  0.0      0     0 pts/1    Z    18:20   0:00 [a.o]
+    <defunct>
+    sudo kill -9 17151 -> kill 17152 zombie processes
+    kill(pid, SIGINT) -> send a SIGINT sign to pid process
 #_TODO_
-
 *  To learn bash from Peter's website.
 *  _Program Lib HOWTO_
 *  http://vim-showoff-peter.heroku.com
