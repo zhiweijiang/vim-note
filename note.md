@@ -1,3 +1,7 @@
+# _My Note
+
+## bash
+
 >``cd fir-<tab>``  -> cd first	(Quick completion)
 
 ###path
