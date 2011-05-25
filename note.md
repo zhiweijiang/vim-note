@@ -12,6 +12,7 @@
 ###mkdir
 
 >``mkdir -p mydir1/mydir2``  -> will also create all directories leading up to the given directory that do not exist already. If the given directory already exists, ignore the error.
+>``mkfifo -> assembly a FIFO file
 
 ###mv and cp
 
@@ -336,6 +337,12 @@ tandard
     do: sudo chmod 777 /dev/fb0
 
 ### gcc
+    (four steps)
+    one: gcc -E *.c -o *.i (define)
+    two: gcc -S *i -o *.s  (compilation)
+    three: as *.s -o *.o   (assembly)
+    four: gcc *.o -o *     (link)
+ 
     gcc -o -> the other named
     gcc -I -> indicated *.h file
     gcc -L -> indicated lib*.so file
