@@ -426,6 +426,13 @@ tandard
     <defunct>
     sudo kill -9 17151 -> kill 17152 zombie processes
     kill(pid, SIGINT) -> send a SIGINT sign to pid process
+    getpid() -> take self pid
+    pid_t waitpid(pid_t pid, int *status, int options) -> The process of recovery from the state    
+### pthread 
+    pthread_self() -> take self tid
+    int pthread_join(pthread_t thread, void **value_ptr) -> the pthread of
+    recovery from the state
+    pthread_mutex_t mutex = PTHREAD_MUTEX_INITALIZER -> init mutex
 #_TODO_
 *  To learn bash from Peter's website.
 *  _Program Lib HOWTO_
