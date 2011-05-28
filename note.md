@@ -435,6 +435,26 @@ tandard
     int pthread_join(pthread_t thread, void **value_ptr) -> the pthread of
     recovery from the state
     pthread_mutex_t mutex = PTHREAD_MUTEX_INITALIZER -> init mutex
+
+### Development board
+    vim .bashrc -> modify PATH
+    echo $PATH  -> View PATH
+    sudo apt-get install nfs-kernel-server ->  creat a share path named nfs 
+    vim /etc/exports ->  View development board share path
+    ifconfig ->  Display or sets the network facilities
+    minicom -> goto Development board
+    sudo ifconfig eth10 192.168.1.211 -> modify PC IP
+    ping IP -> Tests whether a link
+    CTRL + A + Z + W -> printf function 
+    mount -t nfs -o nolock,tcp 192.168.1.211:/home/xwp/nfs /mnt -> cd document of the mirror
+
+    ./configure --host=arm-linux --target=arm-linux -> make arm-linux the
+    library
+    make
+    cd .libs/
+    file libjpeg.so.8.0.0 
+    libjpeg.so.8.0.0: ELF 32-bit LSB shared object, ARM, version 1 (SYSV),
+    dynamically linked, not stripped
 #_TODO_
 *  To learn bash from Peter's website.
 *  _Program Lib HOWTO_
