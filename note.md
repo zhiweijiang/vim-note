@@ -1,4 +1,4 @@
-# _My Note
+
 
 ## bash
 
@@ -127,6 +127,8 @@
 *  zc              -> Flod floding.
 *  ``vim -t main`` -> should exist the ctags
 *   :v  CTRL + x   -> Automatically indents
+*   :v SHIFT + >|< -> Selected Tab
+*   :v  CTRL + l   -> Add a comment lines 
 ### split view
 
 *  ``vim -On file1 file2``  -> Vertical Split
