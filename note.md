@@ -128,7 +128,7 @@
 *  ``vim -t main`` -> should exist the ctags
 *   :v  CTRL + x   -> Automatically indents
 *   :v SHIFT + >|< -> Selected Tab
-*   :v  CTRL + l   -> Add a comment lines 
+*   :v  CTRL + c   -> Add a comment lines 
 ### split view
 
 *  ``vim -On file1 file2``  -> Vertical Split
@@ -443,10 +443,12 @@ tandard
     vim /etc/exports ->  View development board share path
     ifconfig ->  Display or sets the network facilities
     minicom -> goto Development board
+
     sudo ifconfig eth10 192.168.1.211 -> modify PC IP
     ping IP -> Tests whether a link
     CTRL + A + Z + W -> printf function 
     mount -t nfs -o nolock,tcp 192.168.1.211:/home/xwp/nfs /mnt -> cd document of the mirror
+    umount -> Disconnect mapping
 
     ./configure --host=arm-linux --target=arm-linux -> make arm-linux the
     library
@@ -455,6 +457,13 @@ tandard
     file libjpeg.so.8.0.0 
     libjpeg.so.8.0.0: ELF 32-bit LSB shared object, ARM, version 1 (SYSV),
     dynamically linked, not stripped
+## C++
+
+### Compilation
+    g++ -> other function same with gcc
+### link    
+    this -> typedef point 
+    nm a.out -> find scan name mangling
 #_TODO_
 *  To learn bash from Peter's website.
 *  _Program Lib HOWTO_
